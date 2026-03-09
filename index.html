@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jackson Taylor">
+    <meta nmae="description" content="WDD231 course homepage">
     <title>Course Home Page</title>
-    <script src= "scripts/course.js" defer></script>
+
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
 </head>
 
@@ -13,6 +21,7 @@
 <body>
     <header>
     <span>Jackson Taylor</span>
+    <button id="menu"></button>
     </header>
     <nav id="navMenu">
         <a href="index.html">Home</a>
@@ -20,6 +29,7 @@
         <a href="final/index.html">Final</a>
 
     </nav>
+    <main>
     <h1>Home</h1>
 
     <section>
@@ -33,15 +43,22 @@
         <button id="wdd">WDD</button>
         <button id="css">CSS</button>
     </div>
-</body>
+    <div id="courses"></div>
+    <p id="credits"></p>
+
+
+    </main>
 
 
 
-
-
-<footer>
-<div class="social">
-    <a href="https//github.com/Jctman5">Github</a>
-</div>
+    <footer>
+    <div class="social">
+        <a href="https//github.com/Jctman5">Github</a>
+    </div>
+    <p>
+        © <span id="year"></span> Jackson Taylor | USA
+    </p>
+    <p id="lastModified"></p>
 </footer>
+</body>
 </html>
