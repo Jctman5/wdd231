@@ -2,6 +2,8 @@ body{
     font-family: Arial, sans-serif;
     margin:0;
     padding:0;
+    background-color: white;
+    color: black;
 }
 
 header{
@@ -11,8 +13,12 @@ header{
 }
 
 nav{
-    display:none;
-    flex-direction:column;
+    display:flex;
+    background-color: darkgreen;
+    font-size: 2rem;
+    border: black;
+    padding: 1%;
+    justify-content: space-evenly;
 
 }
 
@@ -24,7 +30,7 @@ nav a{
 }
 #courses{
     display:grid;
-    grid: template columns 1fr;
+    grid-template-columns: 1fr;
     gap: 0.5rem;
 }
 .completed{

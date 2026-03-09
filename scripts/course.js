@@ -76,4 +76,42 @@ const courses = [
         ],
         completed: false
     }
-]
+];
+const courseContainer = document.querySelector("#courses");
+const creditDisplay = document.querySelector("#credits");
+
+function displayCourses(courseList){
+
+courseContainer.innerHTML = "";
+
+courseList.forEach(course => {
+
+const card = document.createElement("div");
+
+card.textContent = `${course.subject} ${course.number}`;
+
+if(course.completed){
+card.classList.add("completed");
+}
+
+courseContainer.appendChild(card);
+
+});
+
+const totalCredits = courseList.reduce((sum, course)=>sum + course.credits,0);
+
+creditDisplay.textContent = `Total Credits: ${totalCredits}`;
+}
+displayCourses(courses);
+
+document.getElementById("all").addEventListener("click", ()=>{
+displayCourses(courses);
+});
+
+document.getElementById("wdd").addEventListener("click", ()=>{
+displayCourses(courses.filter(course => course.subject === "WDD"));
+});
+
+document.getElementById("css").addEventListener("click", ()=>{
+displayCourses(courses.filter(course => course.subject === "CSE"));
+});
