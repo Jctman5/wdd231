@@ -12,9 +12,5 @@
     #courses{
         grid-template-columns: repeat(3,1fr);
     }
-    .menu{
-        button:hover{
-            background-color: blue;
-        }
-    }
+
 }
