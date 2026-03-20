@@ -1,0 +1,64 @@
+[
+    {
+        "name": "Nintendo",
+        "address": "4600 150th Ave WA",
+        "phone": "(800) 255-3700",
+        "website": "https://www.nintendo.com/us/?srsltid=AfmBOopyZZJmAPGo9cPZUSUxH1Cxwl0M-o_hB9l6xGVQCa4tUof4rgND",
+        "image": "nintendologo.jpg",
+        "level": "1"
+    },
+
+    {
+        "name": "Guitar Center",
+        "address": "215 Spotsylvania Mall Dr, Fredericksburg, VA",
+        "phone": "(540) 785-1880",
+        "website": "https://www.guitarcenter.com",
+        "image": "guitarcenterlogo.jpg",
+        "level": "1"
+    },
+
+    {
+        "name": "Sweetwater",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "image": "",
+        "level": "3"
+    },
+    {
+        "name": "Tillys",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "image": "",
+        "level": "2"
+    },
+    {
+        "name": "Boss",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "image": "",
+        "level": "3"
+    },
+
+    {
+        "name": "Earthquaker Devices",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "image": "",
+        "level": "2"
+    },
+
+    {
+        "name": "Old Blood Noise Endeavors",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "image": "",
+        "level": "1"
+    }
+
+
+]

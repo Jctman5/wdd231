@@ -115,3 +115,5 @@ displayCourses(courses.filter(course => course.subject === "WDD"));
 document.getElementById("css").addEventListener("click", ()=>{
 displayCourses(courses.filter(course => course.subject === "CSE"));
 });
+
+

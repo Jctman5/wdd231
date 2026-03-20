@@ -1,0 +1,27 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+nav {
+  display: none;
+}
+
+#members.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+#members.list {
+  display: block;
+}
+
+#members section {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+}
