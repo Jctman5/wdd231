@@ -25,3 +25,24 @@ nav {
 img {
   width: 100%;
 }
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.cta {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: gold;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#spotlights {
+  display: grid;
+  gap: 1rem;
+}

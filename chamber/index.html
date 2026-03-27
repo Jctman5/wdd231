@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jackson Taylor">
+    <meta name="description" content="Chamber of Commerce page for businesses in Fredericksburg Virginia.">
+
+
+    <meta property="og:title" content="Directory">
+    <meta property="og:description" content="Local business directory for Fredericksburg Virginia">
+    <meta property="og:image" content="https://jctman5.github.io/wdd231/chamber/images/Fredericksburg.jpg">
+    <meta property="og:url" content="https://jctman5.github.io/wdd231/directory.html">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="images/favicon.ico">
+    
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    
+    <title>Directory</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Chamber of Commerce</h1>
+        <button id="menu">☰</button>
+    </header>
+    
+    <nav id="navMenu">
+        <a href="#">Home</a>\
+        <a href="directory.html">Directory</a>
+        <a href="#">Join</a>
+    </nav>
+
+    <main>
+
+
+    <section class="hero">
+        <img src="images/hero.jpg" alt="City view">
+        <a href="#" class="cta">Join the Chamber</a>
+    </section>
+
+
+    <section>
+        <h2>Current Events</h2>
+        <p>Community festival this weekend!</p>
+    </section>
+
+
+    <section id="weather">
+        <h2>Weather</h2>
+        <p id="temp"></p>
+        <p id="desc"></p>
+        <div id="forecast"></div>
+    </section>
+
+
+    <section>
+        <h2>Business Spotlights</h2>
+        <div id="spotlights"></div>
+    </section>
+
+</main>
+
+<footer>
+<p>Contact: Jctman5@gmail.com</p>
+<p>© <span id="year"></span>Jackson Taylor | WDD231</p>
+<p id="lastModified"></p>
+</footer>
+</body>
+</html>
