@@ -1,9 +1,9 @@
-const apiKey = "YOUR_API_KEY";
+const apiKey = "3a851b7b6b56b9d51af166f4c4c263ae";
 const city = "Fredericksburg";
-const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${apiKey}`;
+const weatherUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${apiKey}`;
 
 async function getWeather() {
-  const response = await fetch(url);
+  const response = await fetch(weatherUrl);
   const data = await response.json();
 
   // Current

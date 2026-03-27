@@ -1,16 +1,16 @@
-const url = "data/members.json";
+const spotlightUrl = "data/members.json";
 
 async function getSpotlights() {
-  const response = await fetch(url);
+  const response = await fetch(spotlightUrl);
   const data = await response.json();
 
-  // Filter gold (3) and silver (2)
+
   const filtered = data.filter(m => m.level >= 2);
 
-  // Shuffle
+
   const shuffled = filtered.sort(() => 0.5 - Math.random());
 
-  // Pick 3
+
   const selected = shuffled.slice(0, 3);
 
   displaySpotlights(selected);

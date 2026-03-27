@@ -5,7 +5,7 @@
         "phone": "(800) 255-3700",
         "website": "https://www.nintendo.com/us/?srsltid=AfmBOopyZZJmAPGo9cPZUSUxH1Cxwl0M-o_hB9l6xGVQCa4tUof4rgND",
         "image": "nintendologo.jpg",
-        "level": "1"
+        "level": 1
     },
 
     {
@@ -14,7 +14,7 @@
         "phone": "(540) 785-1880",
         "website": "https://www.guitarcenter.com",
         "image": "guitarcenterlogo.jpg",
-        "level": "1"
+        "level": 1
     },
 
     {
@@ -23,7 +23,7 @@
         "phone": "",
         "website": "",
         "image": "",
-        "level": "3"
+        "level": 3
     },
     {
         "name": "Tillys",
@@ -31,7 +31,7 @@
         "phone": "",
         "website": "",
         "image": "",
-        "level": "2"
+        "level": 2
     },
     {
         "name": "Boss",
@@ -39,7 +39,7 @@
         "phone": "",
         "website": "",
         "image": "",
-        "level": "3"
+        "level": 3
     },
 
     {
@@ -48,7 +48,7 @@
         "phone": "",
         "website": "",
         "image": "",
-        "level": "2"
+        "level": 2
     },
 
     {
@@ -57,7 +57,7 @@
         "phone": "",
         "website": "",
         "image": "",
-        "level": "1"
+        "level": 1
     }
 
 
