@@ -1,26 +1,39 @@
-const apiKey = "3a851b7b6b56b9d51af166f4c4c263ae";
-const city = "Fredericksburg";
+const apiKey = "3a851b7b6b56b9d51af166f4c4c263ae";  
+const city = "Fredericksburg,VA,US";  
+
 const weatherUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${apiKey}`;
 
 async function getWeather() {
-  const response = await fetch(weatherUrl);
-  const data = await response.json();
+  try {
+    const response = await fetch(weatherUrl);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
 
-  // Current
-  document.getElementById("temp").textContent =
-    `Temp: ${data.list[0].main.temp}°F`;
+    const data = await response.json();
 
-  document.getElementById("desc").textContent =
-    data.list[0].weather[0].description;
+    
+    const current = data.list[0];
+    document.getElementById("temp").textContent = `Temp: ${current.main.temp.toFixed(1)}°F`;
+    document.getElementById("desc").textContent = current.weather[0].description;
 
-  // 3-day forecast (every 8 entries ≈ 24 hours)
-  const forecast = document.getElementById("forecast");
+    
+    const forecastContainer = document.getElementById("forecast");
+    forecastContainer.innerHTML = ""; 
 
-  for (let i = 8; i <= 24; i += 8) {
-    const day = document.createElement("p");
-    day.textContent = `${data.list[i].main.temp}°F`;
-    forecast.appendChild(day);
+    for (let i = 8; i <= 24; i += 8) {
+      const forecastItem = data.list[i];
+      const day = document.createElement("p");
+      day.textContent = `${forecastItem.main.temp.toFixed(1)}°F - ${forecastItem.weather[0].description}`;
+      forecastContainer.appendChild(day);
+    }
+  } catch (error) {
+    console.error("Failed to fetch weather data:", error);
+    document.getElementById("temp").textContent = "Weather data unavailable";
+    document.getElementById("desc").textContent = "";
+    document.getElementById("forecast").textContent = "";
   }
 }
+
 
 getWeather();
