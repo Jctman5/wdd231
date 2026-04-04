@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Join the Chamber of Commerce">
+  <meta name="description" content="Apply to join the Chamber of Commerce and gain access to networking, events, and business growth opportunities.">
   <meta name="author" content="Your Name">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Join | Chamber of Commerce</title>
-
+  <meta property="og:title" content="Join the Chamber of Commerce">
+  <meta property="og:description" content="Apply to join the Chamber and grow your business through networking, events, and promotions.">
+  <meta property="og:image" content="https://jctman5.github.io/wdd231/chamber/images/favicon.jpg">
+  <meta property="og:url" content="https://jctman5.github.io/wdd231/chamber/join.html">
+  <title>Join Fredericksburg Chamber of Commerce</title>
+  <link rel="icon" href="images/favicon.ico">
   <!-- CSS -->
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
@@ -16,6 +19,11 @@
   <script src="scripts/form.js" defer></script>
   <script src="scripts/modals.js" defer></script>
   <script src="scripts/date.js" defer></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 </head>
 
 <body>
@@ -32,7 +40,7 @@
 
 <main>
 
-<h1>Join the Chamber</h1>
+<h2>Join the Chamber</h2>
 
 <div class="join-container">
 
@@ -60,18 +68,17 @@
     <label>
       Email:
       <input type="email" name="email" required
-        placeholder="example@email.com"
-        autocomplete="email">
+        title="Enter your email">
     </label>
 
     <label>
       Phone:
-      <input type="tel" name="phone" required autocomplete="tel">
+      <input type="tel" name="phone" required title="Enter your phone number">
     </label>
 
     <label>
       Business Name:
-      <input type="text" name="business" required autocomplete="organization">
+      <input type="text" name="business" required title="Enter your business name">
     </label>
 
     <label>
@@ -128,25 +135,24 @@
 <dialog id="npModal">
   <h3>NP Membership</h3>
   <p>No fee. Great for nonprofits.</p>
-  <button onclick="this.parentElement.close()">Close</button>
+  
 </dialog>
 
 <dialog id="bronzeModal">
   <h3>Bronze Membership</h3>
   <p>Basic listing and networking events.</p>
-  <button onclick="this.parentElement.close()">Close</button>
+  
 </dialog>
 
 <dialog id="silverModal">
   <h3>Silver Membership</h3>
   <p>Includes advertising and event discounts.</p>
-  <button onclick="this.parentElement.close()">Close</button>
+  
 </dialog>
 
 <dialog id="goldModal">
   <h3>Gold Membership</h3>
   <p>Premium spotlight placement and top benefits.</p>
-  <button onclick="this.parentElement.close()">Close</button>
 </dialog>
 
 </main>
