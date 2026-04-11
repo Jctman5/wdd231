@@ -114,3 +114,22 @@ form textarea {
   margin-top: .3rem;
   box-sizing: border-box;
 }
+.discover-grid {
+  display: grid;
+  gap: 1rem;
+
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+.discover-grid section {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
