@@ -65,9 +65,6 @@
 
 
 
-
-
-  
   
   
   {
@@ -75,27 +72,55 @@
     "name": "Jackson",
     "role": "Lead Guitarist",
     "influences": "Full Body 2, Modern Color, Day Aches",
-    "yearsActive": "6"
+    "yearsActive": "6",
+    "image": "images/jackson.jpg",
+    "gear":{
+      "name": "Fender Noventa Jazzmaster",
+      "type": "Guitar",
+      "description": "Used for dreamy shoegaze tones",
+      "image": "images/jazzmaster.jpg"
+    }
   },
   {
     "type": "member",
     "name": "Ryan",
     "role": "Vocals and Rhythm Guitarist",
     "influences": "System of a Down, Fleshwater, Tool",
-    "yearsActive": "3"
+    "yearsActive": "3",
+    "image": "images/ryan.jpg",
+    "gear":{
+      "name": "BC Rich Mockingbird",
+      "type": "Guitar",
+      "description": "Used for heavy shoegaze tones",
+      "image": "images/mockingbird.jpg"
+    }
   },
   {
     "type": "member",
     "name": "Leo",
     "role": "Drummer",
     "influences": "Loathe, Thornhill, Superheaven",
-    "yearsActive": "2"
+    "yearsActive": "2",
+    "image": "images/leo.jpg",  
+    "gear":{
+      "name": "Sabian cymbals",
+      "type": "Cymbals",
+      "description": "Great chimey cymbals",
+      "image": "images/sabian.jpg"
+    }
   },
   {
     "type": "member",
     "name": "Armando",
     "role": "Bassist",
-    "influences": "Tally Hall, Slowdive, ",
-    "yearsActive": "3"
+    "influences": "Tally Hall, Slowdive, Mac Demarco",
+    "yearsActive": "3",
+    "image": "images/bassist.jpg",
+    "gear":{
+      "name": "Ibanez TMB100",
+      "type": "Bass Guitar",
+      "description": "Used for heavy low end",
+      "image": "images/bass.jpg"
+    }
   }
 ]
