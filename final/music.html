@@ -2,15 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Undertow music releases">
+    <meta name="description" content="A collection of Undertow's latest music releases">
     <meta name="author" content="Jackson Taylor">
     <title>Undertow | Music</title>
 
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
+    
     <script type="module" src="scripts/content.js" defer></script>
     <script type="module" src="scripts/main.js" defer></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
@@ -30,7 +35,10 @@
     <h2>Music</h2>
     <div id="musicContainer"></div>
 </main>
-
+<dialog id="songModal">
+    <div id="modalContent"></div>
+    <button id="closeSongModal">Close</button>
+</dialog>
 <footer>
     <p>&copy; Undertow</p>
 </footer>

@@ -4,21 +4,25 @@
     "title": "see ya",
     "year": 2026,
     "genre": "Shoegaze",
-    "length": "3:37"
+    "length": "3:37",
+    "image": "images/seeYa.jpg"
   },
   {
     "type": "song",
     "title": "within time",
     "year": 2025,
     "genre": "Grunge",
-    "length": "5:01"
+    "length": "5:01",
+    "image": "images/withinTime.jpg"
+
   },
   {
     "type": "song",
     "title": "torn",
     "year": 2025,
     "genre": "Grunge",
-    "length": "3:31"
+    "length": "3:31",
+    "image": "images/torn.jpg"
   },
   
   
@@ -28,27 +32,41 @@
   
   {
     "type": "show",
-    "title": "DC show",
-    "date": "April 22",
+    "title": "DC",
+    "date": "04-22",
     "location": "Washington, DC",
     "venue": "The Pie Shop"
   },
 
   {
     "type": "show",
-    "title": "Maryland show",
-    "date": "June 13",
+    "title": "Maryland",
+    "date": "06-13",
     "location": "Rockville, MD",
     "venue": "HiceMice"
   },
   {
     "type": "show",
-    "title": "Baltimore show",
-    "date": "June 25th",
+    "title": "Baltimore",
+    "date": "06-25",
     "location": "Baltimore, MD",
     "venue": "Ottobar"
   },
-  
+  {
+    "type": "show",
+    "title": "Richmond",
+    "date": "10-18",
+    "location": "Richmond, VA",
+    "venue": "Banditos"
+  },
+
+
+
+
+
+
+
+
   
   
   

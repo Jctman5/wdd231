@@ -19,3 +19,13 @@
     padding: 1rem;
     margin: 1rem;
 }
+#musicContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}

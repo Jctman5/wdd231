@@ -1,46 +1,54 @@
-const container = document.querySelector("#musicContainer");
+const musicContainer = document.querySelector("#musicContainer");
+const showsList = document.querySelector("#showsList");
 
 async function loadContent() {
     try {
-        const response = await fetch("../data/content.json");
+        const response = await fetch("data/content.json");
         const data = await response.json();
 
-        container.innerHTML = data.map(item => {
-            
-            if (item.type === "song") {
-                return `
-                <div class="card">
-                    <h3>${item.title}</h3>
-                    <p>Year: ${item.year}</p>
-                    <p>Genre: ${item.genre}</p>
-                    <p>Length: ${item.length}</p>
-                </div>`;
-            }
+        // =========================
+        // MUSIC PAGE
+        // =========================
+        if (musicContainer) {
+            const songs = data.filter(item => item.type === "song");
 
-            if (item.type === "show") {
-                return `
+            musicContainer.innerHTML = songs.map(song => `
                 <div class="card">
-                    <h3>${item.title}</h3>
-                    <p>Date: ${item.date}</p>
-                    <p>Location: ${item.location}</p>
-                    <p>Venue: ${item.venue}</p>
-                </div>`;
-            }
+                    <img src="${song.image}" alt="${song.title}" loading="lazy">
+                    <h3>${song.title}</h3>
+                    <p>Year: ${song.year}</p>
+                    <p>Genre: ${song.genre}</p>
+                    <p>Length: ${song.length}</p>
+                </div>
+            `).join("");
+        }
 
-            if (item.type === "member") {
-                return `
-                <div class="card">
-                    <h3>${item.name}</h3>
-                    <p>Role: ${item.role}</p>
-                    <p>Influences: ${item.influences}</p>
-                    <p>Years Active: ${item.yearsActive}</p>
-                </div>`;
-            }
+        // =========================
+        // HOME PAGE (SHOWS)
+        // =========================
+        if (showsList) {
+            const today = new Date();
 
-        }).join("");
+            const shows = data
+                .filter(item => item.type === "show")
+                .filter(show => new Date(show.date) >= today)
+                .sort((a, b) => new Date(a.date) - new Date(b.date))
+                .slice(0, 3);
+
+            showsList.innerHTML = shows.map(show => `
+                <li>
+                    <img src="${show.image}" alt="${show.title}" loading="lazy" width="150">
+                    <div>
+                        <strong>${show.title}</strong><br>
+                        ${new Date(show.date).toLocaleDateString()}<br>
+                        ${show.location} @ ${show.venue}
+                    </div>
+                </li>
+            `).join("");
+        }
 
     } catch (error) {
-        console.error(error);
+        console.error("Error loading content:", error);
     }
 }
 

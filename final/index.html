@@ -12,7 +12,12 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script type="module" src="scripts/main.js" defer></script>
+    
+    <script src="scripts/main.js" defer></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
@@ -32,21 +37,22 @@
 <main>
 
 <section class="hero">
-    <h2>Feel the Undertow</h2>
+    <h2>undertow</h2>
 </section>
 
 <section>
     <h2>Latest Release</h2>
     <p>Stream our newest single now.</p>
+    <img src="images/seeya.jpg" alt="see ya">
+    
+</section>
+<section>
     <button id="openModal">Listen</button>
 </section>
 
 <section>
     <h2>Upcoming Shows</h2>
-    <ul>
-        <li>/li>
-        <li>May 20 - DC Underground</li>
-    </ul>
+    <ul id="showsList"></ul>
 </section>
 
 </main>
