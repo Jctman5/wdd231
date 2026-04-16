@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Submit a message to the band, and we will get in touch asap.">
+    <meta name="author" content="Jackson Taylor">
+    <meta property="og:title" content="Undertow Band">
+    <meta property="og:description" content="Shoegaze/Grunge band Undertow">
+    <meta property="og:type" content="website">
+    <title>Undertow | Home</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script type="module" src="scripts/main.js" defer></script>
+</head>
+
+
+<body>
+<header>
+    <h1>Undertow</h1>
+    <nav>
+        <button id="menuBtn">☰</button>
+        <ul id="navMenu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+<form action="form-action.html" method="get">
+    <label>Name:
+        <input type="text" name="name" required>
+    </label>
+
+    <label>Email:
+        <input type="email" name="email" required>
+    </label>
+
+    <label>Message:
+        <textarea name="message"></textarea>
+    </label>
+
+    <button type="submit">Send</button>
+</form>
+</main>
+<footer>
+    <p>&copy; Undertow</p>
+</footer>
+</body>
+</html>

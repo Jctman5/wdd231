@@ -1,0 +1,26 @@
+body {
+    font-family: Arial;
+    background: #0d0d0d;
+    color: #e0e0e0;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: Courier New;
+    color: #8a7cff;
+}
+
+nav ul {
+    display: none;
+    list-style: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+#menuBtn {
+    background: none;
+    color: white;
+    font-size: 1.5rem;
+}
