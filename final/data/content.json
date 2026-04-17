@@ -33,7 +33,7 @@
   {
     "type": "show",
     "title": "DC",
-    "date": "04-22",
+    "date": "2026-04-22",
     "location": "Washington, DC",
     "venue": "The Pie Shop"
   },
@@ -41,21 +41,21 @@
   {
     "type": "show",
     "title": "Maryland",
-    "date": "06-13",
+    "date": "2026-06-13",
     "location": "Rockville, MD",
     "venue": "HiceMice"
   },
   {
     "type": "show",
     "title": "Baltimore",
-    "date": "06-25",
+    "date": "2026-06-25",
     "location": "Baltimore, MD",
     "venue": "Ottobar"
   },
   {
     "type": "show",
     "title": "Richmond",
-    "date": "10-18",
+    "date": "2026-10-18",
     "location": "Richmond, VA",
     "venue": "Banditos"
   },
@@ -65,7 +65,6 @@
 
 
 
-  
   
   {
     "type": "member",
@@ -87,7 +86,7 @@
     "role": "Vocals and Rhythm Guitarist",
     "influences": "System of a Down, Fleshwater, Tool",
     "yearsActive": "3",
-    "image": "images/ryan.jpg",
+    "image": "images/Ryan.jpg",
     "gear":{
       "name": "BC Rich Mockingbird",
       "type": "Guitar",
