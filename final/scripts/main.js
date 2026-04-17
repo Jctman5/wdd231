@@ -35,7 +35,7 @@ async function loadShows() {
             .sort((a, b) => new Date(a.date) - new Date(b.date))
 
             // Limit to next 3 shows
-            .slice(0, 4);
+            .slice(0, 3);
 
         showsList.innerHTML = shows.map(show => `
             <li>

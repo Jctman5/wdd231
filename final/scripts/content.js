@@ -73,7 +73,6 @@ async function loadContent() {
 
             showsList.innerHTML = shows.map(show => `
                 <li>
-                    <img src="${show.image || ''}" alt="${show.title}" loading="lazy" width="120">
                     <div>
                         <strong>${show.title}</strong><br>
                         ${new Date(show.date).toLocaleDateString()}<br>
